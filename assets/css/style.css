@@ -1,0 +1,315 @@
+@font-face {
+    font-family: "roboto";
+    src: url("../font/Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-family: "roboto-light";
+    src: url(../font/Roboto-Light.ttf);
+}
+
+@font-face {
+    font-family: "roboto-bold";
+    src: url(../font/Roboto-Bold.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "roboto";
+}
+
+p {
+    font-family: roboto-light;
+}
+
+/*  ****** landingpage ******** */
+
+.landingpage{
+    display: flex;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+.by {
+    font-size: 0.8rem;
+}
+
+.lefttop {
+    margin-left: 6rem;
+    margin-top: 2rem;
+}
+
+h2 {
+    font-size: 2.8rem;
+}
+
+.leftbottom {
+    width: 29rem;
+    margin-top: 12rem;
+    margin-left: 8rem;
+}
+
+.leftbottom p {
+    font-size: 0.9rem;
+    font-weight: 100;
+    margin-top: 1rem;
+}
+
+.pink {
+    color: #FF3571;
+    font-weight: 900;
+    font-size: 0.9rem;
+    padding-top: 3rem;
+}
+ /* **** rightside ********* */
+
+.rightside {
+    padding-left: 10rem;
+}
+ 
+.human {
+    z-index: 10;
+    position: absolute;
+    top: 2rem;
+    height: 35rem;
+}
+
+img {
+    height: 200px;
+}
+
+.space {
+    z-index: 1;
+    height: 35rem;
+}
+
+
+/*  ******* animation ******* */
+
+ .human {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    animation: fly 10s linear infinite alternate;
+  }
+
+  
+  @keyframes fly {
+    from {
+      transform: translatey(-15%);
+    }
+    to {
+      transform: translatey(10%);
+    }
+  }
+
+  /*  ******* imgs ******** */
+
+  .imgs img {
+    width: 100vw;
+    height: auto;
+  }
+ 
+  /*  *******  idea ***********/
+
+.oben {
+    display: flex;
+    padding-top: 10rem;
+}
+.oben h3 {
+    height: 20rem;
+    font-size: 2rem;
+    margin-left: 8rem;
+    width: 15rem;
+}
+
+.oben p {
+    width: 39rem;
+    margin-left: 8rem;
+    line-height: 1.8rem;
+}
+
+.mitte {
+    padding: 4rem 8rem;
+    font-size: 2rem;
+    width: 60rem;
+    margin-left: 6rem;
+}
+
+.unten {
+    display: flex;
+}
+/* ******* logo before ******** */
+.logo1::before {
+    content: '';
+    display: inline-block;
+    background-image: url('../img/title02.svg');
+    width: 20px;
+    height: 20px;
+}
+
+.logo2::before {
+    content: '';
+    display: inline-block;
+    background-image: url('../img/title03.svg');
+    width: 20px;
+    height: 20px;
+}
+
+.logo3::before {
+    content: '';
+    display: inline-block;
+    background-image: url('../img/title04.svg');
+    width: 20px;
+    height: 20px;
+}
+
+.logo4::before {
+    content: '';
+    display: inline-block;
+    background-image: url('../img/title01.svg');
+    width: 20px;
+    height: 20px;
+}
+
+  /* ****** unten ******** */
+
+.unten p {
+    font-size: 0.8rem;
+    line-height: 1.4rem;
+    margin-bottom: 8rem;
+}
+
+.unten div {
+    width: 17rem;
+    margin-left: 14rem;
+}
+
+
+
+.untenrechts {
+    margin-left: 22rem;
+}
+/*  ****** ready ****** */
+.ready {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ready > p {
+    font-size: 0.8rem;
+    line-height: 1.4rem;
+    margin-top: 1rem;
+}
+
+h5 {
+    font-size: 1.5rem;
+}
+
+.readyp{
+    margin-bottom: 8rem;
+    width: 23rem;
+    text-align: center;
+}
+
+.ready .number {
+    font-size: 3rem;
+    color: #dddddd;
+    font-family: "roboto-bold";
+}
+
+.divbox01 {
+    display: flex;
+    margin-bottom: 4rem;
+}
+
+.text1 {
+    width: 30rem;
+    margin-left: 20rem;
+}
+
+.divbox01 img{
+    height: 20rem;
+    }
+
+    .divbox01 p:nth-of-type(3) {
+        font-size: 0.8rem;
+        line-height: 1.4rem;
+        margin-top: 1rem;
+    }
+
+.divbox02 {
+    display: flex;
+    margin-bottom: 4rem;
+}
+
+.divbox02 p:nth-of-type(3) {
+    font-size: 0.8rem;
+    line-height: 1.4rem;
+    margin-top: 1rem;
+}
+
+.divbox02 img{
+    height: 20rem;
+    }
+
+.number {
+    padding-bottom: 3rem;
+}
+
+.text2 {
+    width: 30rem;
+    margin-right: 10rem;
+ }
+
+.emoji {
+   font-size: 50px;
+   vertical-align: middle;
+}
+
+.challange-box {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 29rem;
+    margin-bottom: 7rem;
+    font-size: 0.8rem;
+    line-height: 1.4rem;
+}
+
+.email {
+    height: 3.4rem;
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 1rem;
+    border-color: #F5F5F5;
+    border-style: solid;
+    padding: 1.5rem 3rem 1.5rem 3rem;
+}
+
+
+button {
+    font-size: 1rem;
+    font-family: 'roboto-light';
+    background-color: #FF3571;
+    color: white;
+    padding: 1rem 3rem 1rem 3rem;
+    margin-top: 2rem;
+    border-radius: 0.2rem;
+    border-style: none;
+}
+
+.createdwithlove {
+    margin-left: -30rem;
+}
